@@ -20,9 +20,9 @@ The app securely connects to RDS for transactional data and to S3 for file stora
 
 | Service  | Benefits| Impacts |
 | -------- |-------- |-------- |
-| CDN + SHield    | provides caching, DDoS protection (AWS Shield), and initial TLS termination. | Adds slight latency at request filtering  |
-| WAF |Blocks OWASP Top 10 threats at the edge |Adds slight latency at request filtering |
-| Private Subnets for ECS/RDS |-------- |-------- |
-| -------- |-------- |-------- |
-| -------- |-------- |-------- |
-| -------- |-------- |-------- |
+| AWS CDN + Shield    | provides caching, DDoS protection (AWS Shield), and initial TLS termination. | Adds slight latency at request filtering  |
+| AWS WAF |Blocks OWASP Top 10 threats at the edge |Adds slight latency at request filtering |
+| Private Subnets for AWS ECS/RDS/S3  |Isolates compute resources + RDS, S3, and Cognito |Adds complexity and technical overhead|
+| AWS KMS |Meets compliance, protects data at rest | Requires key rotation and lifecycle management |
+| Amazon Guard Duty | Analyzes CloudTrail logs, VPC flow logs, and DNS logs for suspicious activity | Threat Detection |
+| AWS Security Hub  | Centralized Hub for Security metrics - aggregates findings from GuardDuty, Config, Inspector, IAM Access Analyzer, and other tools | Governance & Compliance |
