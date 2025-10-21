@@ -15,3 +15,14 @@ The ALB routes validated traffic internally to containerized application workloa
 
 ECS to RDS and S3 (Data Layer):
 The app securely connects to RDS for transactional data and to S3 for file storage. Both are encrypted with AWS KMS and accessed through private endpoints.
+
+## AWS Services & Design Trade- offs
+
+| Service  | Benefits| Impacts |
+| -------- |-------- |-------- |
+| CDN + SHield    | provides caching, DDoS protection (AWS Shield), and initial TLS termination. | Adds slight latency at request filtering  |
+| WAF |Blocks OWASP Top 10 threats at the edge |Adds slight latency at request filtering |
+| Private Subnets for ECS/RDS |-------- |-------- |
+| -------- |-------- |-------- |
+| -------- |-------- |-------- |
+| -------- |-------- |-------- |
