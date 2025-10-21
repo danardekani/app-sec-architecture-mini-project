@@ -16,7 +16,7 @@ The ALB routes validated traffic internally to containerized application workloa
 ECS to RDS and S3 (Data Layer):
 The app securely connects to RDS for transactional data and to S3 for file storage. Both are encrypted with AWS KMS and accessed through private endpoints.
 
-## AWS Services & Design Trade- offs
+## AWS Controls & Design Trade- offs
 
 | Service  | Benefits| Impacts |
 | -------- |-------- |-------- |
