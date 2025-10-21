@@ -26,3 +26,14 @@ The app securely connects to RDS for transactional data and to S3 for file stora
 | AWS KMS |Meets compliance, protects data at rest | Requires key rotation and lifecycle management |
 | Amazon Guard Duty | Analyzes CloudTrail logs, VPC flow logs, and DNS logs for suspicious activity | Threat Detection |
 | AWS Security Hub  | Centralized Hub for Security metrics - aggregates findings from GuardDuty, Config, Inspector, IAM Access Analyzer, and other tools | Governance & Compliance |
+
+## Questions/Considerations
+
+1. What’s our data retention and deletion policy for inactive tenants?
+
+2. Should we extend DDoS mitigation beyond AWS Shield Standard (e.g., Shield Advanced)?
+
+3. How should we handle cross-region failover for disaster recovery?
+
+4. Is AWS WAF sufficient protection agianst web based attacks?
+    - Is an additional security layer required? (e.g., Application runtime protection)
