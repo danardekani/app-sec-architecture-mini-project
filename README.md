@@ -1,4 +1,4 @@
-# app-sec-architecture-mini-project
+# Application Security Architecture Mini Project
 Design AWS system architecture to practice diagraming, building controls, and drafting reviews. 
 
 ``` AWS Architecture (Conceptually):
